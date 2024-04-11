@@ -46,6 +46,6 @@ return {
 
     --set keymaps
     vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = 'Nvim[T]ree [T]oggle file explorer' })
-    vim.keymap.set('n', '<leader>tf', '<cmd>NvimTreeRefresh<CR>', { desc = 'Nvim[T]ree [r]efresh file explorer' })
+    vim.keymap.set('n', '<leader>tr', '<cmd>NvimTreeRefresh<CR>', { desc = 'Nvim[T]ree [r]efresh file explorer' })
   end,
 }
