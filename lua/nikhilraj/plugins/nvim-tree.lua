@@ -37,8 +37,7 @@ return {
         },
       },
       filters = {
-        dotfiles = true,
-        custom = { '.DS_Store' },
+        custom = { '^.DS_Store$', 'node_modules', '^.git$', '^.cache$' },
       },
       git = {
         ignore = true,
@@ -46,8 +45,7 @@ return {
     }
 
     --set keymaps
-    vim.keymap.set('n', '<leader>fe', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle [f]ile [e]xplorer' })
-    vim.keymap.set('n', '<leader>tf', '<cmd>NvimTreeRefresh<CR>', { desc = 'Refresh Nvim[T]ree [f]ile explorer' })
+    vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = 'Nvim[T]ree [T]oggle file explorer' })
+    vim.keymap.set('n', '<leader>tf', '<cmd>NvimTreeRefresh<CR>', { desc = 'Nvim[T]ree [r]efresh file explorer' })
   end,
 }
-
