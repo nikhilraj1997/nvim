@@ -1,6 +1,7 @@
 return { -- LSP Configuration & Plugins
   'neovim/nvim-lspconfig',
   dependencies = {
+    { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
     -- Useful status updates for LSP.
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
     { 'j-hui/fidget.nvim', opts = {} },
