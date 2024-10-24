@@ -58,6 +58,7 @@ return { -- Highlight, edit, and navigate code
         "query",
         "python",
         "go",
+        "diff",
       },
       incremental_selection = {
         enable = true,
